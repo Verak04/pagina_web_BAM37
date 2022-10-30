@@ -1,0 +1,74 @@
+body {
+    background-image: url(/src/img/fondo.jfif);
+   
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    
+}
+header{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 2% 5%;
+    box-sizing: border-box;
+    background: rgba(0, 2, 0, 0.2);
+    overflow: hidden;
+}
+.informacion_perfil{
+    width: 35%;
+    float:left;
+}
+header img{
+    width: 100%;
+}
+
+form {
+    width: 99%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+margin-bottom: 1%;
+}
+
+form h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+#boton{
+    background: rgb(29, 106, 106);
+    color: white;
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+    background: rgb(20, 61, 61);
+
+}
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
