@@ -1,39 +1,145 @@
 body {
-    background-image: url(/src/img/fondo.jfif);
-   
+    background-image: url(/src/img/fondo.jpg);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
-    
 }
-header{
+
+header {
     width: 90%;
     margin: auto;
     margin-top: 30px;
     padding: 2% 5%;
     box-sizing: border-box;
-    background: rgba(0, 2, 0, 0.2);
+    background: rgba(0, 2, 0, 0.5);
     overflow: hidden;
 }
-.informacion_perfil{
-    width: 35%;
-    float:left;
+
+.informacion_perfil {
+    width: 100%;
+
 }
-header img{
+
+div img {
+    width: 35%;
+    float: left;
+}
+
+#foto_perfil {
     width: 100%;
 }
 
+div #info-personal {
+    width: 65%;
+    margin: 0%;
+    float: right;
+}
+
+#info-personal h1 {
+    width: 90%;
+    font-size: 3.3vw;
+    text-align: center;
+    font-family: 'UniqueRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: aliceblue;
+    border-style: double;
+    border-top: none;
+    margin-left: 10%;
+    box-sizing: border-box;
+}
+
+.info-personal li {
+    list-style-type: none;
+    margin-top: 5%;
+    font-size: 2vw;
+    text-align: center;
+    font-family: 'CagliostroRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: azure;
+}
+
+.imagenes {
+    overflow: hidden;
+    width: 90%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-top: 5%;
+    box-sizing: border-box;
+    border-top-style: double;
+    color: azure;
+}
+
+.imagen1,
+.imagen2,
+.imagen3 {
+    float: right;
+    width: 30%;
+    height: 50%;
+}
+.imagen1:hover,
+.imagen2:hover,
+.imagen3:hover{
+    width:33%;
+    height: 40%;
+}
+nav{
+    width: 90%;
+    margin: 5%;
+    margin-top: 10px;
+    padding: 1%;
+    box-sizing: border-box;
+    background: rgba(0, 1, 0, 0.3);
+    overflow: hidden;
+    position: fixed;
+}
+.nav{
+    background-color: rgb(192, 103, 211,0.4);
+    font-family: 'CagliostroRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: azure;
+    border-style: double;
+    box-sizing: border-box;
+    float: right;
+    width: 18%;
+    margin-left: 1%;
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 1vw;
+}
+.inicio{
+    background-color: rgb(192, 103, 211,0.4);
+    font-family: 'CagliostroRegular';
+    font-weight: normal;
+    font-style: normal;
+    color: azure;
+    border-style: double;
+    box-sizing: border-box;
+    float: left;
+    width: 8%;
+    margin-left: 1%;
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 1vw;
+}
+.nav:hover, .inicio:hover{
+    background-color: rgba(71, 30, 80, 0.4);
+}
+
 form {
-    width: 99%;
+    width: 90%;
     margin: auto;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 7px;
     padding: 10px 20px;
     box-sizing: border-box;
-margin-bottom: 1%;
+    margin-bottom: 8%;
 }
 
-form h2{
+form h2 {
     color: white;
     text-align: center;
     margin: 0;
@@ -41,7 +147,8 @@ form h2{
     margin-bottom: 30px;
 }
 
-input, textarea{
+input,
+textarea {
     width: 100%;
     margin-bottom: 10px;
     padding: 7px;
@@ -50,25 +157,45 @@ input, textarea{
     border: none;
 }
 
-textarea{
+textarea {
     min-height: 100px;
     max-height: 200px;
     min-width: 100%;
     max-width: 100%;
 }
-#boton{
-    background: rgb(29, 106, 106);
+
+#boton {
+    background: rgb(229, 125, 231);
     color: white;
     padding: 20px;
 }
 
-#boton:hover{
+#boton:hover {
     cursor: pointer;
-    background: rgb(20, 61, 61);
+    background: rgb(61, 20, 60);
 
 }
-@media (max-width:480px){
-    form{
+
+@media (max-width:650px) {
+    body {
+        background-attachment: none;
+        margin: 0;
+    }
+
+    #perfil {
+        width: 35vh;
+    }
+
+    #informacion {
+        width: 100%;
+        height: 550px;
+        padding: 5%;
+        margin: 1%;
+    }
+
+    form {
         width: 100%;
     }
+
+}
 }
